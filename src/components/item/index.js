@@ -6,9 +6,9 @@ export default function Item({data}) {
 
    return(
       <div id="item">
-         <strong>Desafio 01</strong>
-         <p>ReactJS, NodeJS, AdonisJS</p>
-         <span>Leandro Ribeiro de Souza</span>
+         <strong>{data.title}</strong>
+         <p>{data.techs}</p>
+         <span>{data.url}</span>
       </div>
    )
 }
