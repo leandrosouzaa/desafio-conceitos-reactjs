@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 import "./styles.css";
+
+import Item from './components/item'
 
 function App() {
   async function handleAddRepository() {
@@ -15,8 +17,7 @@ function App() {
     <div>
       <ul data-testid="repository-list">
         <li>
-          Repositório 1
-
+          <Item data={} />
           <button onClick={() => handleRemoveRepository(1)}>
             Remover
           </button>
